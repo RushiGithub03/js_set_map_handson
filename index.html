@@ -7,22 +7,24 @@
 </head>
 <body>
     <h2>
-        Question -1 
+        <pre>
+    Question -1 
 
-        "Problem:
-You are given a string (STR) of length N, consisting of only the lower case English alphabet.
-Your task is to remove all the duplicate occurrences of characters in the string.
+    "Problem: You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+      Your task is to remove all the duplicate occurrences of characters in the string.
 
-Input:
-abcadeecfb
+         Input:
+         abcadeecfb
 
-Output:
-abcdef"
+         Output:
+         abcdef"
+        </pre>
     </h2>
 
-    <h2>Answer-1 
+    <h2>  
 
-        <h2>
+        <pre>
+        Answer-1 
 
         let str="abcadeecfb";
 
@@ -37,51 +39,56 @@ abcdef"
         let s3 = s2.join("");
         console.log(s3);
 
-        </h2>
+        </pre>
 
 
+    </h2>
+
+
+
+    <h2>
+        <pre>
+      Question-2
+
+        "Problem You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)
+        
+          Input:
+          abcadeecfb
+        
+           Output:
+           a=2
+           b=2
+           c=2
+           d=1
+           e=2
+           f=1"
+    </pre>
     </h2>
 
 
     <h2>
-        // question-2
-
-        //         "Problem:
-        // You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)
-        
-        // Input:
-        // abcadeecfb
-        
-        // Output:
-        // a=2
-        // b=2
-        // c=2
-        // d=1
-        // e=2
-        // f=1"
-    </h2>
-
-
-    <h2>Anwer-2
+    <pre>       Answer-2
 
         let inp = "abcadeecfb";
-let ans = new Map();
-for(let char of inp) {
-    if (ans.has(char)) {
-        ans.set(char, ans.get(char)+1)
-    }
+        let ans = new Map();
+       
+        for(let char of inp) {
+        
+            if (ans.has(char)) {
+             ans.set(char, ans.get(char)+1)
+          }
 
-    else {
-        ans.set(char,1);
-    }
-}
+            else {
+             ans.set(char,1);
+          }
+           }
 
-for(let [ke,value] of ans) {
-    console.log(`${ke}=${value}`);
-}
+        for(let [ke,value] of ans) {
+             console.log(`${ke}=${value}`);
+        }
+      </h2>
 
-
-    </h2>
+    </pre>
 
     <script src="./index.js"></script>
 </body>
